@@ -1,0 +1,154 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 600px;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 200px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+    }
+
+    .form-group {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      display: block;
+      width: 100%;
+      height: 30px;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #66ccff;
+    }
+
+    .form-group input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      margin-right: 5px;
+    }
+
+    .form-group span {
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .form-group a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+
+    .form-group a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      width: 80%;
+      height: 40px;
+      background-color: #66ccff;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #3399ff;
+    }
+
+    .button:active {
+      background-color: #0066cc;
+    }
+
+    .button:focus {
+      outline: none;
+    }
+
+    .footer {
+      width: 80%;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer p {
+      margin-bottom: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="HMP-1.png" alt="Healthmate Pro Logo">
+      <h1>HEALTHMATE-PRO</h1>
+    </div>
+    <div class="form">
+      <form action="sign-up.php" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="terms" name="terms" required>
+          <span>I agree to the <a href="terms_and_conditions.html">terms and conditions</a></span>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="button">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <p>Already have an account? <a href="LOGINPAGE.html">Log In</a></p>
+      <p>© 2024 Healthmate Pro. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
